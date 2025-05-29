@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Services</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-image: url('bg.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    .container {
+      text-align: center;
+      padding: 50px 20px;
+      background-color: rgba(255, 255, 255, 0.5); /* semi-transparent overlay */
+      min-height: 100vh;
+    }
+
+    h1 {
+      font-size: 3em;
+      font-weight: bold;
+      color: #0033a0;
+    }
+
+    h1 span {
+      color: #e63946;
+    }
+
+    .cards {
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+      flex-wrap: wrap;
+      margin-top: 40px;
+    }
+
+    .card {
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      width: 220px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      text-align: center;
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: contain;
+    }
+
+    .card h3 {
+      margin-top: 10px;
+      font-size: 1.2em;
+    }
+
+    .card .click-btn {
+      margin-top: 15px;
+      background-color: #ffe066;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 20px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .back-btn {
+      margin-top: 40px;
+      background-color: #ffe066;
+      border: none;
+      padding: 10px 25px;
+      font-weight: bold;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+
+    .card h3.blue { color: #0033a0; }
+    .card h3.red { color: #b22222; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1><span>OUR</span> SERVICES</h1>
+    <div class="cards">
+      <div class="card">
+        <h3 class="blue">Birth Services</h3>
+        <img src="https://cdn-icons-png.flaticon.com/512/3534/3534060.png" alt="Birth Service">
+        <button class="click-btn" onclick="location.href='#'">CLICK HERE</button>
+      </div>
+      <div class="card">
+        <h3 class="red">Marriage Services</h3>
+        <img src="https://cdn-icons-png.flaticon.com/512/1995/1995474.png" alt="Marriage Service">
+        <button class="click-btn" onclick="location.href='#'">CLICK HERE</button>
+      </div>
+      <div class="card">
+        <h3 class="blue">Death Services</h3>
+        <img src="https://cdn-icons-png.flaticon.com/512/633/633759.png" alt="Death Service">
+        <button class="click-btn" onclick="location.href='#'">CLICK HERE</button>
+      </div>
+    </div>
+    <button class="back-btn" onclick="location.href='#'">BACK</button>
+  </div>
+</body>
+</html>
